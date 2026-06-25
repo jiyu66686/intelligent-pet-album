@@ -1,0 +1,20 @@
+# Python缓存/虚拟环境
+venv/
+__pycache__/
+*.pyc
+*.log
+
+# 上传图片文件夹
+uploads/
+
+# 前端超大依赖（必须过滤，不然上传极慢）
+frontend/node_modules/
+frontend/package-lock.json
+
+# 密钥配置文件
+.env
+backend/.env
+
+# IDE配置文件
+.vscode/
+.idea/

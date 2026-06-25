@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: #f5f7fa;
+}
+
+a {
+  color: #409EFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66b1ff;
+}
+
+.el-card {
+  border-radius: 8px;
+}
+
+.el-card .el-card__header {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px 20px;
+  font-weight: bold;
+}

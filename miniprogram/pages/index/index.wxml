@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="header">
+    <text class="title">📸 智能宠物相册</text>
+  </view>
+
+  <view class="stats">
+    <view class="stat-item" bindtap="goToPhotos">
+      <text class="stat-number">{{totalPhotos}}</text>
+      <text class="stat-label">总照片</text>
+    </view>
+    <view class="stat-item" bindtap="goToPhotos">
+      <text class="stat-number">{{catCount}}</text>
+      <text class="stat-label">猫咪</text>
+    </view>
+    <view class="stat-item" bindtap="goToPhotos">
+      <text class="stat-number">{{dogCount}}</text>
+      <text class="stat-label">狗狗</text>
+    </view>
+  </view>
+
+  <view class="photo-grid">
+    <view class="photo-item" wx:for="{{photos}}" wx:key="id" bindtap="viewPhoto" data-id="{{item.id}}">
+      <image src="{{item.photo_url}}" mode="aspectFill"></image>
+      <view class="photo-info">
+        <text class="photo-name">{{item.photo_name}}</text>
+        <text class="photo-breed">{{item.pet_breed}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="bottom-menu">
+    <view class="menu-item" bindtap="goToUpload">
+      <text class="menu-icon">📷</text>
+      <text class="menu-text">上传</text>
+    </view>
+    <view class="menu-item" bindtap="goToProfile">
+      <text class="menu-icon">👤</text>
+      <text class="menu-text">我的</text>
+    </view>
+  </view>
+</view>
